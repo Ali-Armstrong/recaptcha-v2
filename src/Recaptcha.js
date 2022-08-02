@@ -21,6 +21,7 @@ const Recaptcha = () => {
     // );
   }
 
+  //to get the token without any user interactions
   const onloadFun = async(e) => {
     const captchaToken = await recaptchaRef.current.executeAsync();
     recaptchaRef.current.reset();
